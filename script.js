@@ -28,7 +28,6 @@ function createTodo(text) {
 // appends it
 function appendTodo(placeToAdd, elementToAdd) {
   placeToAdd.appendChild(createTodo(elementToAdd));
-  
 }
 
 // function for the add button
@@ -168,7 +167,7 @@ function inputHandler(event) {
   }
 
   if (event.target.parentElement.classList.contains('form')) {
-    if (name.value.length <= 3) {
+    if (name.value.length <= 1 ) {
       deactivateButton();
     } else {
       activateButton();
